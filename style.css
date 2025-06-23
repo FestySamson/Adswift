@@ -736,6 +736,8 @@ footer {
 
     .cta-btn {
         display: none;
+        padding: 0;
+        margin: 0;
     }
 
     nav {
@@ -764,6 +766,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    
 }
 
 @keyframes slideDown {
