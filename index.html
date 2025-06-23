@@ -9,6 +9,12 @@
     <title>Adswift - Your Gateway to Crypto & Easy Bill Payments</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./image/fav.png" type="image/png">
+    <!-- Font Awesome CDN for social icons -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEWKVFH0YR"></script>
@@ -256,7 +262,7 @@
                 </div>
                 <div class="contact-form">
                     <h3>Send us a Message</h3>
-                    <form>
+                    <form action="https://formsubmit.co/hello@adswifts.com" method="post">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>
@@ -291,10 +297,18 @@
                     </div>
                     <p style="margin-top: 1rem; color: #ccc; line-height: 1.6;">The leading platform for cryptocurrency trading and utility bill payments in Nigeria. Secure, fast, and reliable.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">📱</a>
-                        <a href="#" class="social-link">🐦</a>
-                        <a href="#" class="social-link">📧</a>
+                        <a href="#" target="_blank" style="color:#16abe9">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://x.com/ADSWIFT_?t=KEKPruQ2mfIeJfVZX07r-g&s=09" target="_blank" style="color:#16abe9">
+                             <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                         <a href="https://instagram.com/adswiftdirect" target="_blank" style="color:#16abe9">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" target="_blank" style="color:#16abe9">
+                             <i class="fab fa-telegram fa-lg"></i>
+                        </a>                        
                     </div>
                 </div>
                 <div class="footer-section">
@@ -336,6 +350,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Chat Button -->
+        <a href="https://wa.me/2348067290570" target="_blank" class="whatsapp-button">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
+        </a>
+
     <script>
         // Header scroll effect
 window.addEventListener('scroll', function() {
@@ -362,11 +382,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Contact form submission
-document.querySelector('.contact-form form').addEventListener('submit', function(e) {
+/*document.querySelector('.contact-form form').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Thank you for your message! We\'ll get back to you soon.');
     this.reset();
-});
+});*/
 
 // Add animation on scroll
 const observerOptions = {
