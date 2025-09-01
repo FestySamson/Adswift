@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Adswift Terms and Conditions - Read the terms of service for using our crypto trading and bill payment platform.">
+    <title>Terms and Conditions - Adswift</title>
+    <link rel="icon" href="./image/fav.png" type="image/png">
+    <!-- Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        #header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(22, 171, 233, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #header.header-scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #16abe9;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #16abe9;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, #16abe9, #0891b2);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(22, 171, 233, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #333;
+            cursor: pointer;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-top: 80px;
+            padding: 4rem 0;
+        }
+
+        .terms-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #16abe9, #0891b2);
+            color: white;
+            border-radius: 20px;
+        }
+
+        .terms-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .terms-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .last-updated {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #e0f2fe;
+            border-radius: 10px;
+            color: #0891b2;
+            font-weight: 600;
+        }
+
+        .terms-content {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .terms-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .terms-section h2 {
+            color: #16abe9;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid #e0f2fe;
+            padding-bottom: 0.5rem;
+        }
+
+        .terms-section h3 {
+            color: #0891b2;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem 0;
+            font-weight: 600;
+        }
+
+        .terms-section p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .terms-section ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .terms-section li {
+            margin-bottom: 0.5rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 4px solid #16abe9;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .contact-info-box {
+            background: linear-gradient(135deg, #16abe9, #0891b2);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-info-box h3 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .contact-info-box p {
+            color: white;
+            opacity: 0.9;
+        }
+
+        .contact-info-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info-box a:hover {
+            text-decoration: underline;
+        }
+
+        .table-of-contents {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .table-of-contents h3 {
+            color: #16abe9;
+            margin-bottom: 1rem;
+        }
+
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .table-of-contents li {
+            margin-bottom: 0.5rem;
+        }
+
+        .table-of-contents a {
+            color: #0891b2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .table-of-contents a:hover {
+            color: #16abe9;
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #16abe9;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #16abe9;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(22, 171, 233, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #16abe9;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            color: #ccc;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25d366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7);
+            }
+
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 0 0 20px 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .cta-desktop {
+                display: none;
+            }
+
+            .terms-header h1 {
+                font-size: 2rem;
+            }
+
+            .terms-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .terms-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .terms-header {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <img src="./image/logo3.jpg" alt="Adswift">
+                <span class="logo-text">Adswift</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <!-- Right-side Buttons -->
+            <div class="nav-right">
+                <a href="index.html#cta-section" class="cta-desktop">
+                    <button class="cta-btn">Get Started</button>
+                </a>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Terms Header -->
+            <div class="terms-header">
+                <h1>Terms and Conditions</h1>
+                <p>Please read these terms carefully before using our cryptocurrency trading and bill payment services.
+                </p>
+            </div>
+
+            <!-- Last Updated -->
+            <div class="last-updated">
+                <strong>Last Updated:</strong> September 1, 2025
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="table-of-contents">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                    <li><a href="#services">2. Our Services</a></li>
+                    <li><a href="#eligibility">3. Eligibility and Account Registration</a></li>
+                    <li><a href="#kyc">4. Identity Verification (KYC)</a></li>
+                    <li><a href="#crypto-trading">5. Cryptocurrency Trading</a></li>
+                    <li><a href="#bill-payments">6. Bill Payment Services</a></li>
+                    <li><a href="#fees">7. Fees and Charges</a></li>
+                    <li><a href="#user-responsibilities">8. User Responsibilities</a></li>
+                    <li><a href="#prohibited-activities">9. Prohibited Activities</a></li>
+                    <li><a href="#risk-disclosure">10. Risk Disclosure</a></li>
+                    <li><a href="#limitation-liability">11. Limitation of Liability</a></li>
+                    <li><a href="#termination">12. Account Termination</a></li>
+                    <li><a href="#governing-law">13. Governing Law</a></li>
+                </ul>
+            </div>
+
+            <!-- Terms Content -->
+            <div class="terms-content">
+
+                <!-- Acceptance of Terms -->
+                <div class="terms-section" id="acceptance">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By accessing, downloading, or using the Adswift mobile application ("App") and our services, you
+                        ("User," "you," or "your") agree to be bound by these Terms and Conditions ("Terms"). These
+                        Terms constitute a legally binding agreement between you and Adswift Technologies Limited
+                        ("Adswift," "we," "us," or "our").</p>
+
+                    <div class="highlight-box">
+                        <strong>Important:</strong> If you do not agree to these Terms, you must not access or use our
+                        services. Your continued use of the App constitutes acceptance of any updates to these Terms.
+                    </div>
+
+                    <p>These Terms apply to all users of our services, including browsers, vendors, customers,
+                        merchants, and contributors of content.</p>
+                </div>
+
+                <!-- Our Services -->
+                <div class="terms-section" id="services">
+                    <h2>2. Our Services</h2>
+
+                    <p>Adswift provides the following services through our mobile application:</p>
+
+                    <h3>2.1 Cryptocurrency Exchange Services</h3>
+                    <ul>
+                        <li>Buying and selling of cryptocurrencies including Bitcoin, Ethereum, and other supported
+                            digital assets</li>
+                        <li>Cryptocurrency-to-Naira conversion services</li>
+                        <li>Real-time market data and price information</li>
+                        <li>Secure cryptocurrency wallet services</li>
+                    </ul>
+
+                    <h3>2.2 Bill Payment Services</h3>
+                    <ul>
+                        <li>Airtime and data bundle purchases for all Nigerian networks</li>
+                        <li>Electricity bill payments for all distribution companies</li>
+                        <li>Cable TV subscription renewals (DSTV, GOTV, StarTimes, etc.)</li>
+                        <li>Internet subscription payments</li>
+                        <li>Other utility bill payment services</li>
+                    </ul>
+
+                    <h3>2.3 Additional Services</h3>
+                    <ul>
+                        <li>24/7 customer support</li>
+                        <li>Transaction history and reporting</li>
+                        <li>Account management tools</li>
+                        <li>Security features including two-factor authentication</li>
+                    </ul>
+                </div>
+
+                <!-- Eligibility -->
+                <div class="terms-section" id="eligibility">
+                    <h2>3. Eligibility and Account Registration</h2>
+
+                    <h3>3.1 Eligibility Requirements</h3>
+                    <p>To use our services, you must:</p>
+                    <ul>
+                        <li>Be at least 18 years of age</li>
+                        <li>Be a legal resident of Nigeria or eligible jurisdiction</li>
+                        <li>Have the legal capacity to enter into binding contracts</li>
+                        <li>Provide accurate and complete registration information</li>
+                        <li>Not be restricted from using financial services under applicable laws</li>
+                    </ul>
+
+                    <h3>3.2 Account Registration</h3>
+                    <ul>
+                        <li>You may only create one account per person</li>
+                        <li>You must provide accurate, current, and complete information</li>
+                        <li>You are responsible for maintaining account security</li>
+                        <li>You must promptly update any changes to your information</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <strong>Warning:</strong> Providing false information or creating multiple accounts may result
+                        in immediate account suspension and legal action.
+                    </div>
+                </div>
+
+                <!-- KYC -->
+                <div class="terms-section" id="kyc">
+                    <h2>4. Identity Verification (KYC)</h2>
+
+                    <p>In compliance with Nigerian regulatory requirements and international AML standards, all users
+                        must complete our Know Your Customer (KYC) process.</p>
+
+                    <h3>4.1 Required Documentation</h3>
+                    <ul>
+                        <li>Government-issued photo identification (National ID, International Passport, or Driver's
+                            License)</li>
+                        <li>Proof of address (utility bill, bank statement, or government correspondence)</li>
+                        <li>Bank Verification Number (BVN)</li>
+                        <li>Selfie verification</li>
+                        <li>Additional documentation as may be required</li>
+                    </ul>
+
+                    <h3>4.2 Verification Process</h3>
+                    <ul>
+                        <li>Verification typically takes 24-48 hours</li>
+                        <li>We reserve the right to request additional documentation</li>
+                        <li>Incomplete or invalid documentation will delay verification</li>
+                        <li>Verification is required before accessing full platform features</li>
+                    </ul>
+                </div>
+
+                <!-- Crypto Trading -->
+                <div class="terms-section" id="crypto-trading">
+                    <h2>5. Cryptocurrency Trading</h2>
+
+                    <h3>5.1 Trading Terms</h3>
+                    <ul>
+                        <li>All cryptocurrency trades are final and irreversible</li>
+                        <li>Exchange rates are determined in real-time based on market conditions</li>
+                        <li>We reserve the right to set minimum and maximum transaction limits</li>
+                        <li>Trading may be suspended during periods of high volatility or technical maintenance</li>
+                    </ul>
+
+                    <h3>5.2 Wallet Services</h3>
+                    <ul>
+                        <li>We provide custodial wallet services for supported cryptocurrencies</li>
+                        <li>You acknowledge that we hold legal title to cryptocurrencies in our custody</li>
+                        <li>Withdrawal requests are processed within 24 hours subject to security checks</li>
+                        <li>We reserve the right to freeze funds pending investigation of suspicious activity</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <strong>Risk Warning:</strong> Cryptocurrency trading involves substantial risk of loss. Past
+                        performance is not indicative of future results. Only trade with funds you can afford to lose.
+                    </div>
+                </div>
+
+                <!-- Bill Payments -->
+                <div class="terms-section" id="bill-payments">
+                    <h2>6. Bill Payment Services</h2>
+
+                    <h3>6.1 Payment Processing</h3>
+                    <ul>
+                        <li>Bill payments are processed in real-time or within minutes</li>
+                        <li>You are responsible for providing accurate beneficiary information</li>
+                        <li>Failed payments due to incorrect information are non-refundable</li>
+                        <li>We partner with licensed bill payment processors</li>
+                    </ul>
+
+                    <h3>6.2 Service Availability</h3>
+                    <ul>
+                        <li>Services may be temporarily unavailable due to maintenance or partner issues</li>
+                        <li>We will notify users of scheduled maintenance when possible</li>
+                        <li>Refunds for service outages will be considered on a case-by-case basis</li>
+                    </ul>
+                </div>
+
+                <!-- Fees -->
+                <div class="terms-section" id="fees">
+                    <h2>7. Fees and Charges</h2>
+
+                    <h3>7.1 Transaction Fees</h3>
+                    <ul>
+                        <li>Cryptocurrency trading fees range from 0.5% to 2% depending on transaction volume</li>
+                        <li>Bill payment fees are clearly displayed before transaction confirmation</li>
+                        <li>Network fees for cryptocurrency withdrawals are charged separately</li>
+                        <li>Premium features may incur additional charges</li>
+                    </ul>
+
+                    <h3>7.2 Fee Changes</h3>
+                    <p>We reserve the right to modify our fee structure with 30 days' notice to users. Continued use of
+                        our services after fee changes constitutes acceptance of the new fee structure.</p>
+
+                    <div class="highlight-box">
+                        <strong>Transparency:</strong> All fees are clearly displayed in the app before you confirm any
+                        transaction. No hidden charges.
+                    </div>
+                </div>
+
+                <!-- User Responsibilities -->
+                <div class="terms-section" id="user-responsibilities">
+                    <h2>8. User Responsibilities</h2>
+
+                    <h3>8.1 Account Security</h3>
+                    <ul>
+                        <li>Maintain the confidentiality of your login credentials</li>
+                        <li>Enable two-factor authentication</li>
+                        <li>Promptly report any unauthorized account access</li>
+                        <li>Use strong, unique passwords</li>
+                        <li>Keep your app updated to the latest version</li>
+                    </ul>
+
+                    <h3>8.2 Compliance</h3>
+                    <ul>
+                        <li>Comply with all applicable laws and regulations</li>
+                        <li>Report any suspicious activities on your account</li>
+                        <li>Provide accurate information for tax reporting purposes</li>
+                        <li>Respect intellectual property rights</li>
+                    </ul>
+
+                    <h3>8.3 Prohibited Use</h3>
+                    <p>You agree not to use our services for any unlawful purpose or in any way that could damage,
+                        disable, or impair our services.</p>
+                </div>
+
+                <!-- Prohibited Activities -->
+                <div class="terms-section" id="prohibited-activities">
+                    <h2>9. Prohibited Activities</h2>
+
+                    <p>The following activities are strictly prohibited:</p>
+
+                    <h3>9.1 Illegal Activities</h3>
+                    <ul>
+                        <li>Money laundering or terrorist financing</li>
+                        <li>Fraud or any deceptive practices</li>
+                        <li>Tax evasion or other illegal financial activities</li>
+                        <li>Violating any applicable laws or regulations</li>
+                    </ul>
+
+                    <h3>9.2 Platform Abuse</h3>
+                    <ul>
+                        <li>Creating multiple accounts or using false identities</li>
+                        <li>Attempting to manipulate prices or engage in market manipulation</li>
+                        <li>Reverse engineering or attempting to hack our systems</li>
+                        <li>Distributing malware or engaging in cyberattacks</li>
+                    </ul>
+
+                    <h3>9.3 Commercial Restrictions</h3>
+                    <ul>
+                        <li>Using our services for commercial purposes without authorization</li>
+                        <li>Reselling or redistributing our services</li>
+                        <li>Operating competing services using our platform</li>
+                    </ul>
+                </div>
+
+                <!-- Risk Disclosure -->
+                <div class="terms-section" id="risk-disclosure">
+                    <h2>10. Risk Disclosure</h2>
+
+                    <div class="warning-box">
+                        <strong>Important Risk Warning:</strong> Cryptocurrency trading involves substantial risk and
+                        may not be suitable for all users.
+                    </div>
+
+                    <h3>10.1 Market Risks</h3>
+                    <ul>
+                        <li>Cryptocurrency prices are highly volatile and unpredictable</li>
+                        <li>You may lose part or all of your investment</li>
+                        <li>Past performance does not guarantee future results</li>
+                        <li>Market conditions can change rapidly without notice</li>
+                    </ul>
+
+                    <h3>10.2 Technology Risks</h3>
+                    <ul>
+                        <li>Technical failures may affect trading operations</li>
+                        <li>Internet connectivity issues may impact service access</li>
+                        <li>Cybersecurity threats are inherent to digital platforms</li>
+                        <li>Software bugs or system errors may occur</li>
+                    </ul>
+
+                    <h3>10.3 Regulatory Risks</h3>
+                    <ul>
+                        <li>Cryptocurrency regulations are evolving and may change</li>
+                        <li>Government actions may affect cryptocurrency markets</li>
+                        <li>Legal status of cryptocurrencies may vary by jurisdiction</li>
+                    </ul>
+                </div>
+
+                <!-- Limitation of Liability -->
+                <div class="terms-section" id="limitation-liability">
+                    <h2>11. Limitation of Liability</h2>
+
+                    <h3>11.1 Disclaimer of Warranties</h3>
+                    <p>Our services are provided "as is" and "as available" without any warranties of any kind, either
+                        express or implied. We disclaim all warranties, including but not limited to merchantability,
+                        fitness for a particular purpose, and non-infringement.</p>
+
+                    <h3>11.2 Liability Limitations</h3>
+                    <ul>
+                        <li>We shall not be liable for any indirect, incidental, or consequential damages</li>
+                        <li>Our total liability shall not exceed the amount of fees paid by you in the 12 months
+                            preceding the claim</li>
+                        <li>We are not responsible for losses due to market volatility or user error</li>
+                        <li>Force majeure events are excluded from our liability</li>
+                    </ul>
+
+                    <h3>11.3 Third-Party Services</h3>
+                    <p>We are not responsible for the performance, availability, or content of third-party services
+                        integrated with our platform, including payment processors, cryptocurrency networks, and utility
+                        service providers.</p>
+                </div>
+
+                <!-- Account Termination -->
+                <div class="terms-section" id="termination">
+                    <h2>12. Account Termination</h2>
+
+                    <h3>12.1 User Termination</h3>
+                    <ul>
+                        <li>You may close your account at any time by contacting customer support</li>
+                        <li>All pending transactions must be completed before account closure</li>
+                        <li>Remaining balances will be returned according to our withdrawal procedures</li>
+                    </ul>
+
+                    <h3>12.2 Termination by Adswift</h3>
+                    <p>We reserve the right to suspend or terminate accounts for:</p>
+                    <ul>
+                        <li>Violation of these Terms or applicable laws</li>
+                        <li>Suspected fraudulent or illegal activity</li>
+                        <li>Failure to complete KYC requirements</li>
+                        <li>Extended periods of account inactivity</li>
+                        <li>Risk management or regulatory compliance reasons</li>
+                    </ul>
+
+                    <h3>12.3 Effects of Termination</h3>
+                    <ul>
+                        <li>Access to services will be immediately revoked</li>
+                        <li>Outstanding obligations will remain in effect</li>
+                        <li>We will return legitimate funds subject to legal requirements</li>
+                        <li>Certain provisions of these Terms will survive termination</li>
+                    </ul>
+                </div>
+
+                <!-- Fees Detail -->
+                <div class="terms-section" id="fees">
+                    <h2>7. Detailed Fee Structure</h2>
+
+                    <h3>7.1 Cryptocurrency Trading Fees</h3>
+                    <ul>
+                        <li><strong>Maker Fees:</strong> 1.5% for orders that add liquidity to the order book</li>
+                        <li><strong>Taker Fees:</strong> 2.0% for orders that remove liquidity from the order book</li>
+                        <li><strong>Instant Buy/Sell:</strong> 2.5% for instant cryptocurrency purchases and sales</li>
+                        <li><strong>Peer-to-Peer Transactions:</strong> 1.0% flat fee for P2P trades</li>
+                    </ul>
+
+                    <h4>7.1.1 Volume-Based Discounts</h4>
+                    <p>We offer reduced fees for high-volume traders based on their 30-day trading volume:</p>
+
+                    <table class="fee-table">
+                        <tr>
+                            <th>30-Day Trading Volume (NGN)</th>
+                            <th>Maker Fee</th>
+                            <th>Taker Fee</th>
+                        </tr>
+                        <tr>
+                            <td>0 - 500,000</td>
+                            <td>1.5%</td>
+                            <td>2.0%</td>
+                        </tr>
+                        <tr>
+                            <td>500,001 - 2,000,000</td>
+                            <td>1.2%</td>
+                            <td>1.8%</td>
+                        </tr>
+                        <tr>
+                            <td>2,000,001 - 5,000,000</td>
+                            <td>1.0%</td>
+                            <td>1.5%</td>
+                        </tr>
+                        <tr>
+                            <td>5,000,001 - 10,000,000</td>
+                            <td>0.8%</td>
+                            <td>1.2%</td>
+                        </tr>
+                        <tr>
+                            <td>10,000,001+</td>
+                            <td>0.5%</td>
+                            <td>1.0%</td>
+                        </tr>
+                    </table>
+
+                    <h3>7.2 Bill Payment Fees</h3>
+                    <ul>
+                        <li><strong>Airtime Top-up:</strong> 2.0% of transaction value (minimum ₦10)</li>
+                        <li><strong>Data Bundle Purchase:</strong> 1.5% of transaction value (minimum ₦10)</li>
+                        <li><strong>Electricity Bills:</strong> ₦50 flat fee per transaction</li>
+                        <li><strong>Cable TV Subscription:</strong> ₦100 flat fee per transaction</li>
+                        <li><strong>Internet Bills:</strong> 1.0% of transaction value (minimum ₦50)</li>
+                    </ul>
+
+                    <h3>7.3 Withdrawal and Deposit Fees</h3>
+
+                    <h4>7.3.1 Cryptocurrency Deposits</h4>
+                    <ul>
+                        <li><strong>Bitcoin (BTC):</strong> Free (network fees apply)</li>
+                        <li><strong>Ethereum (ETH):</strong> Free (network fees apply)</li>
+                        <li><strong>USDT (ERC-20):</strong> Free (network fees apply)</li>
+                        <li><strong>USDT (TRC-20):</strong> Free (network fees apply)</li>
+                        <li><strong>Other supported cryptocurrencies:</strong> Free (network fees apply)</li>
+                    </ul>
+
+                    <h4>7.3.2 Cryptocurrency Withdrawals</h4>
+                    <p>Cryptocurrency withdrawal fees vary based on network conditions and are calculated dynamically to
+                        cover network transaction costs.</p>
+
+                    <table class="fee-table">
+                        <tr>
+                            <th>Cryptocurrency</th>
+                            <th>Withdrawal Fee</th>
+                        </tr>
+                        <tr>
+                            <td>Bitcoin (BTC)</td>
+                            <td>0.0005 BTC</td>
+                        </tr>
+                        <tr>
+                            <td>Ethereum (ETH)</td>
+                            <td>0.005 ETH</td>
+                        </tr>
+                        <tr>
+                            <td>USDT (ERC-20)</td>
+                            <td>10 USDT</td>
+                        </tr>
+                        <tr>
+                            <td>USDT (TRC-20)</td>
+                            <td>1 USDT</td>
+                        </tr>
+                        <tr>
+                            <td>BNB (BEP-20)</td>
+                            <td>0.0015 BNB</td>
+                        </tr>
+                    </table>
+
+                    <h4>7.3.3 Fiat Currency Deposits</h4>
+                    <ul>
+                        <li><strong>Bank Transfer:</strong> Free (bank charges may apply)</li>
+                        <li><strong>Debit Card:</strong> 1.5% of deposit amount</li>
+                        <li><strong>USSD:</strong> ₦25 flat fee</li>
+                    </ul>
+
+                    <h4>7.3.4 Fiat Currency Withdrawals</h4>
+                    <ul>
+                        <li><strong>Bank Transfer:</strong> ₦25 for amounts above ₦5,000 (free for smaller amounts)</li>
+                        <li><strong>Instant Withdrawal:</strong> 1.0% of withdrawal amount (minimum ₦50)</li>
+                    </ul>
+
+                    <h3>7.4 Other Service Fees</h3>
+                    <ul>
+                        <li><strong>Currency Conversion:</strong> 0.5% fee for conversions between different currencies
+                        </li>
+                        <li><strong>Inactivity Fee:</strong> ₦500 monthly fee after 12 months of account inactivity</li>
+                        <li><strong>Chargeback Fee:</strong> ₦2,500 for disputed transactions</li>
+                        <li><strong>Account Reactivation:</strong> ₦1,000 for reactivating suspended accounts</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h4>Transparency Notice</h4>
+                        <p>All fees are clearly displayed before you confirm any transaction. You will always have the
+                            opportunity to review and accept applicable fees before completing a transaction.</p>
+                    </div>
+
+                    <div class="note-box">
+                        <h4>Important Notes</h4>
+                        <ul>
+                            <li>Fees are subject to change with 30 days' notice to users</li>
+                            <li>Third-party fees (bank charges, network fees) may apply in addition to our fees</li>
+                            <li>Special promotions may temporarily reduce or eliminate certain fees</li>
+                            <li>Enterprise clients may qualify for custom fee structures</li>
+                        </ul>
+                    </div>
+
+                    <h3>7.5 Fee Calculation Examples</h3>
+                    <p>Here are some examples of how fees are calculated:</p>
+
+                    <h4>Example 1: Cryptocurrency Trade</h4>
+                    <p>If you buy ₦100,000 worth of Bitcoin as a taker:</p>
+                    <p>Fee = ₦100,000 × 2.0% = ₦2,000</p>
+                    <p>You will receive ₦98,000 worth of Bitcoin</p>
+
+                    <h4>Example 2: Airtime Purchase</h4>
+                    <p>If you purchase ₦5,000 airtime:</p>
+                    <p>Fee = ₦5,000 × 2.0% = ₦100 (but minimum fee applies)</p>
+                    <p>Since ₦100 > ₦10 minimum, you pay ₦100 fee</p>
+                    <p>₦5,000 - ₦100 = ₦4,900 airtime credited</p>
+
+                    <h4>Example 3: Bank Withdrawal</h4>
+                    <p>If you withdraw ₦20,000 to your bank account:</p>
+                    <p>Fee = ₦25 (flat fee for amounts above ₦5,000)</p>
+                    <p>You receive ₦19,975 in your bank account</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="./image/logo2.jpg" alt="Adswift">
+                        <span class="logo-text" style="color: #16abe9;">Adswift</span>
+                    </div>
+                    <p style="margin-top: 1rem; color: #ccc; line-height: 1.6;">The leading platform for cryptocurrency
+                        trading and utility bill payments in Nigeria. Secure, fast, and reliable.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" style="color:#16abe9">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="https://x.com/ADSWIFT_?t=KEKPruQ2mfIeJfVZX07r-g&s=09" target="_blank"
+                            style="color:#16abe9">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://instagram.com/adswiftdirect" target="_blank" style="color:#16abe9">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" target="_blank" style="color:#16abe9">
+                            <i class="fab fa-telegram fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Crypto Trading</a></li>
+                        <li><a href="#">Bitcoin Exchange</a></li>
+                        <li><a href="#">Airtime Purchase</a></li>
+                        <li><a href="#">Data Bundles</a></li>
+                        <li><a href="#">Electricity Bills</a></li>
+                        <li><a href="#">TV Subscriptions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AdSwift. All rights reserved. | Regulated by the Securities and Exchange Commission</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <a href="https://wa.me/2348067290570?text=Hello Adswift! i need assistance with customer support" target="_blank"
+        class="whatsapp-button">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
+    </a>
